@@ -10,7 +10,7 @@ function App() {
 
   const fetchDailyGoal = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/daily-goal');
+      const response = await fetch('/api/daily-goal');
       const data = await response.json();
       setDailyGoal(data);
     } catch (error) {
